@@ -1,0 +1,42 @@
+2025-10-30 16:26:32,890 - pyswarms.single.global_best - INFO - Optimize for 10 iters with {'c1': 1.5, 'c2': 1.5, 'w': 0.7}
+2025-10-30 16:27:26,347 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -0.7410650134086609, best pos: [4.34918405e+00 1.58691023e+01 1.90614425e-01 2.72957467e+01
+ 2.41253096e+02]
+2025-10-30 16:28:26,462 - pyswarms.single.global_best - INFO - Optimize for 10 iters with {'c1': 1.5, 'c2': 1.5, 'w': 0.7}
+2025-10-30 16:29:20,353 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -0.7423828184604645, best pos: [4.08634449e+00 1.03854766e+01 1.96376232e-01 1.98394436e+01
+ 2.11364098e+02]
+2025-10-30 16:32:38,911 - pyswarms.single.global_best - INFO - Optimize for 25 iters with {'c1': 1.0, 'c2': 2.2, 'w': 0.5}
+2025-10-30 16:32:47,968 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (5,)
+Traceback (most recent call last):
+  File "c:\Users\Enzo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pyswarms\backend\generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+                   ~~~~~~~~~~~~~~~~~^
+        low=min_bounds, high=max_bounds, size=(n_particles, dimensions)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "numpy\\random\\mtrand.pyx", line 1190, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 621, in numpy.random._common.cont
+  File "_common.pyx", line 538, in numpy.random._common.cont_broadcast_2
+  File "__init__.cython-30.pxd", line 830, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 5) and arg 1 with shape (10, 8).
+2025-10-30 16:32:54,627 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (5,)
+Traceback (most recent call last):
+  File "c:\Users\Enzo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pyswarms\backend\generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+                   ~~~~~~~~~~~~~~~~~^
+        low=min_bounds, high=max_bounds, size=(n_particles, dimensions)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "numpy\\random\\mtrand.pyx", line 1190, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 621, in numpy.random._common.cont
+  File "_common.pyx", line 538, in numpy.random._common.cont_broadcast_2
+  File "__init__.cython-30.pxd", line 830, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 5) and arg 1 with shape (10, 8).
+2025-10-30 16:33:06,498 - pyswarms.single.global_best - INFO - Optimize for 10 iters with {'c1': 1.5, 'c2': 1.5, 'w': 0.7}
+2025-10-30 16:33:15,203 - pyswarms.single.global_best - INFO - Optimize for 25 iters with {'c1': 1.0, 'c2': 2.2, 'w': 0.5}
+2025-10-30 16:34:06,619 - pyswarms.single.global_best - INFO - Optimize for 25 iters with {'c1': 1.0, 'c2': 2.2, 'w': 0.5}
+2025-10-30 16:34:40,781 - pyswarms.single.global_best - INFO - Optimize for 25 iters with {'c1': 1.0, 'c2': 2.2, 'w': 0.5}
+2025-10-30 16:41:53,076 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -0.7420350193977356, best pos: [3.53262718e+00 1.22093841e+01 2.45374800e-01 2.30754958e+01
+ 3.10380308e+02 4.61637518e+00 8.39352127e-01 9.69721985e-01]
+2025-10-30 16:58:36,926 - pyswarms.single.global_best - INFO - Optimize for 20 iters with {'c1': 1.2, 'c2': 2.0, 'w': 0.6}
