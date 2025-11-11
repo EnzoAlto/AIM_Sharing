@@ -1,0 +1,134 @@
+year,position,driver_code,team,driver_points
+2025,1,NOR,McLaren,390
+2025,2,PIA,McLaren,366
+2025,3,VER,Red Bull Racing,341
+2025,4,RUS,Mercedes,276
+2025,5,LEC,Ferrari,214
+2025,6,HAM,Ferrari,148
+2025,7,ANT,Mercedes,122
+2025,8,ALB,Williams,73
+2025,9,HUL,Kick Sauber,43
+2025,10,HAD,Racing Bulls,43
+2025,11,BEA,Haas F1 Team,40
+2025,12,ALO,Aston Martin,40
+2025,13,SAI,Williams,38
+2025,14,LAW,Racing Bulls,36
+2025,15,STR,Aston Martin,32
+2025,16,OCO,Haas F1 Team,30
+2025,17,TSU,Red Bull Racing,28
+2025,18,GAS,Alpine,22
+2025,19,BOR,Kick Sauber,19
+2025,20,COL,Alpine,0
+2025,21,DOO,Alpine,0
+2024,1,VER,Red Bull Racing Honda RBPT,437
+2024,2,NOR,McLaren Mercedes,374
+2024,3,LEC,Ferrari,356
+2024,4,PIA,McLaren Mercedes,292
+2024,5,SAI,Ferrari,290
+2024,6,RUS,Mercedes,245
+2024,7,HAM,Mercedes,223
+2024,8,PER,Red Bull Racing Honda RBPT,152
+2024,9,ALO,Aston Martin Aramco Mercedes,70
+2024,10,GAS,Alpine Renault,42
+2024,11,HUL,Haas Ferrari,41
+2024,12,TSU,RB Honda RBPT,30
+2024,13,STR,Aston Martin Aramco Mercedes,24
+2024,14,OCO,Alpine Renault,23
+2024,15,MAG,Haas Ferrari,16
+2024,16,ALB,Williams Mercedes,12
+2024,17,RIC,RB Honda RBPT,12
+2024,18,BEA,Haas Ferrari,7
+2024,19,COL,Williams Mercedes,5
+2024,20,ZHO,Kick Sauber Ferrari,4
+2024,21,LAW,RB Honda RBPT,4
+2024,22,BOT,Kick Sauber Ferrari,0
+2024,23,SAR,Williams Mercedes,0
+2024,24,DOO,Alpine Renault,0
+2023,1,VER,Red Bull Racing Honda RBPT,575
+2023,2,PER,Red Bull Racing Honda RBPT,285
+2023,3,HAM,Mercedes,234
+2023,4,ALO,Aston Martin Aramco Mercedes,206
+2023,5,LEC,Ferrari,206
+2023,6,NOR,McLaren Mercedes,205
+2023,7,SAI,Ferrari,200
+2023,8,RUS,Mercedes,175
+2023,9,PIA,McLaren Mercedes,97
+2023,10,STR,Aston Martin Aramco Mercedes,74
+2023,11,GAS,Alpine Renault,62
+2023,12,OCO,Alpine Renault,58
+2023,13,ALB,Williams Mercedes,27
+2023,14,TSU,AlphaTauri Honda RBPT,17
+2023,15,BOT,Alfa Romeo Ferrari,10
+2023,16,HUL,Haas Ferrari,9
+2023,17,RIC,AlphaTauri Honda RBPT,6
+2023,18,ZHO,Alfa Romeo Ferrari,6
+2023,19,MAG,Haas Ferrari,3
+2023,20,LAW,AlphaTauri Honda RBPT,2
+2023,21,SAR,Williams Mercedes,1
+2023,22,DEV,AlphaTauri Honda RBPT,0
+2022,1,VER,Red Bull Racing RBPT,454
+2022,2,LEC,Ferrari,308
+2022,3,PER,Red Bull Racing RBPT,305
+2022,4,RUS,Mercedes,275
+2022,5,SAI,Ferrari,246
+2022,6,HAM,Mercedes,240
+2022,7,NOR,McLaren Mercedes,122
+2022,8,OCO,Alpine Renault,92
+2022,9,ALO,Alpine Renault,81
+2022,10,BOT,Alfa Romeo Ferrari,49
+2022,11,RIC,McLaren Mercedes,37
+2022,12,VET,Aston Martin Aramco Mercedes,37
+2022,13,MAG,Haas Ferrari,25
+2022,14,GAS,AlphaTauri RBPT,23
+2022,15,STR,Aston Martin Aramco Mercedes,18
+2022,16,MSC,Haas Ferrari,12
+2022,17,TSU,AlphaTauri RBPT,12
+2022,18,ZHO,Alfa Romeo Ferrari,6
+2022,19,ALB,Williams Mercedes,4
+2022,20,LAT,Williams Mercedes,2
+2022,21,DEV,Williams Mercedes,2
+2022,22,HUL,Aston Martin Aramco Mercedes,0
+2021,1,VER,Red Bull Racing Honda,395.5
+2021,2,HAM,Mercedes,387.5
+2021,3,BOT,Mercedes,226
+2021,4,PER,Red Bull Racing Honda,190
+2021,5,SAI,Ferrari,164.5
+2021,6,NOR,McLaren Mercedes,160
+2021,7,LEC,Ferrari,159
+2021,8,RIC,McLaren Mercedes,115
+2021,9,GAS,AlphaTauri Honda,110
+2021,10,ALO,Alpine Renault,81
+2021,11,OCO,Alpine Renault,74
+2021,12,VET,Aston Martin Mercedes,43
+2021,13,STR,Aston Martin Mercedes,34
+2021,14,TSU,AlphaTauri Honda,32
+2021,15,RUS,Williams Mercedes,16
+2021,16,RAI,Alfa Romeo Racing Ferrari,10
+2021,17,LAT,Williams Mercedes,7
+2021,18,GIO,Alfa Romeo Racing Ferrari,3
+2021,19,MSC,Haas Ferrari,0
+2021,20,KUB,Alfa Romeo Racing Ferrari,0
+2021,21,MAZ,Haas Ferrari,0
+2020,1,HAM,Mercedes,347
+2020,2,BOT,Mercedes,223
+2020,3,VER,Red Bull Racing Honda,214
+2020,4,PER,Racing Point BWT Mercedes,125
+2020,5,RIC,Renault,119
+2020,6,SAI,McLaren Renault,105
+2020,7,ALB,Red Bull Racing Honda,105
+2020,8,LEC,Ferrari,98
+2020,9,NOR,McLaren Renault,97
+2020,10,GAS,AlphaTauri Honda,75
+2020,11,STR,Racing Point BWT Mercedes,75
+2020,12,OCO,Renault,62
+2020,13,VET,Ferrari,33
+2020,14,KVY,AlphaTauri Honda,32
+2020,15,HUL,Racing Point BWT Mercedes,10
+2020,16,RAI,Alfa Romeo Racing Ferrari,4
+2020,17,GIO,Alfa Romeo Racing Ferrari,4
+2020,18,RUS,Williams Mercedes,3
+2020,19,GRO,Haas Ferrari,2
+2020,20,MAG,Haas Ferrari,1
+2020,21,LAT,Williams Mercedes,0
+2020,22,AIT,Williams Mercedes,0
+2020,23,FIT,Haas Ferrari,0
