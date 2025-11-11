@@ -184,12 +184,35 @@ class F1DataProcessor:
             telemetry_dfs = []
             dfs = []
             drivers = session_df["Driver"].unique()
+            # for driver in drivers:
+            #     car_df = session_df[session_df["Driver"] ==
+            #                         driver].get_car_data().add_distance()
+            #     lap_df = quali_df[quali_df["Driver"]
+            #                       == driver].reset_index(drop=True)
+            #     if len(lap_df) > 1:
+            #         pivot_telemetry_df = self._process_telemetry(
+            #             car_df,
+            #             lap_df,
+            #             normalize=normalize_telemetry,
+            #             target_points=target_points
+            #         )
+            #         pivot_telemetry_df["Driver"] = driver
+            #         dfs.append(pivot_telemetry_df)
+
+            # return quali_df, pd.concat(dfs)
+            drivers = session_df["Driver"].unique()
+            dfs = []
+
             for driver in drivers:
-                car_df = session_df[session_df["Driver"] ==
-                                    driver].get_car_data().add_distance()
-                lap_df = quali_df[quali_df["Driver"]
-                                  == driver].reset_index(drop=True)
-                if len(lap_df) > 1:
+                try:
+                    car_df = session_df[session_df["Driver"] == driver].get_car_data().add_distance()
+                    lap_df = quali_df[quali_df["Driver"] == driver].reset_index(drop=True)
+
+                    # skip drivers with no usable laps
+                    if lap_df is None or lap_df.empty or len(lap_df) < 2:
+                        print(f"  ⚠️ Skipping driver {driver} in round {round_num}: no usable quali laps")
+                        continue
+
                     pivot_telemetry_df = self._process_telemetry(
                         car_df,
                         lap_df,
@@ -197,9 +220,31 @@ class F1DataProcessor:
                         target_points=target_points
                     )
                     pivot_telemetry_df["Driver"] = driver
+
+                    # ensure 'Time' has a consistent dtype to avoid concat errors
+                    if "Time" in pivot_telemetry_df.columns and pivot_telemetry_df["Time"].dtype != "timedelta64[ns]":
+                        if np.issubdtype(pivot_telemetry_df["Time"].dtype, np.number):
+                            pivot_telemetry_df["Time"] = pd.to_timedelta(pivot_telemetry_df["Time"], unit="s")
+                        else:
+                            pivot_telemetry_df["Time"] = pd.to_timedelta(pivot_telemetry_df["Time"], errors="coerce")
+
                     dfs.append(pivot_telemetry_df)
 
-            return quali_df, pd.concat(dfs)
+                except Exception as e:
+                    # don't kill the round—just drop this driver and continue
+                    print(f"  ⚠️ Skipping driver {driver} in round {round_num} (quali): {e}")
+                    continue
+
+            # if no drivers produced telemetry, still return the ranked quali table
+            if not dfs:
+                return quali_df, pd.DataFrame()
+
+            # belt-and-suspenders: normalize dtype before concatenation
+            for i, df in enumerate(dfs):
+                if "Time" in df.columns and df["Time"].dtype != "timedelta64[ns]":
+                    dfs[i]["Time"] = pd.to_timedelta(df["Time"], unit="s", errors="coerce")
+
+            return quali_df, pd.concat(dfs, ignore_index=True)
 
         except Exception as e:
             print(f"Error processing qualifying round {round_num}: {str(e)}")
@@ -243,26 +288,37 @@ class F1DataProcessor:
             laps_df["Position"] = laps_df["Driver"].map(race_results_dict)
 
             telemetry_dfs = []
-            dfs = []
+            # dfs = []
+            # drivers = session_df["Driver"].unique()
             drivers = session_df["Driver"].unique()
+            dfs = []
+
             for driver in drivers:
+                try:
+                    car_df = session_df[session_df["Driver"] == driver].get_car_data().add_distance()
+                    lap_df = laps_df[laps_df["Driver"] == driver].reset_index(drop=True)
 
-                car_df = session_df[session_df["Driver"] ==
-                                    driver].get_car_data().add_distance()
-                lap_df = laps_df[laps_df["Driver"]
-                                 == driver].reset_index(drop=True)
+                    if lap_df is None or lap_df.empty or len(lap_df) < 2:
+                        continue
 
-                if len(lap_df) > 1:
                     pivot_telemetry_df = self._process_telemetry(
-                        car_df,
-                        lap_df,
-                        normalize=normalize_telemetry,
-                        target_points=target_points
+                        car_df, lap_df, normalize=normalize_telemetry, target_points=target_points
                     )
                     pivot_telemetry_df["Driver"] = driver
                     dfs.append(pivot_telemetry_df)
 
-            return laps_df, pd.concat(dfs)
+                except Exception as e:
+                    print(f"  ⚠️ Skipping driver {driver} in round {round_num} (race): {e}")
+                    continue
+
+            if not dfs:
+                return laps_df, pd.DataFrame()
+
+            for i, df in enumerate(dfs):
+                if "Time" in df.columns and df["Time"].dtype != "timedelta64[ns]":
+                    dfs[i]["Time"] = pd.to_timedelta(df["Time"], unit="s", errors="coerce")
+
+            return laps_df, pd.concat(dfs, ignore_index=True)
 
         except Exception as e:
             print(f"Error processing race round {round_num}: {str(e)}")
