@@ -1,32 +1,37 @@
-Track,Accident,Collision,Damage Related,Mechanical or Physical Fault,Total % of Race Results
-Abu Dhabi Grand Prix,3.05%,4.20%,0.77%,,
-Australian Grand Prix,,4.20%,1.15%,0.77%,
-Austrian Grand Prix,4.33%,,0.77%,1.40%,
-Azerbaijan Grand Prix,2.67%,4.20%,0.77%,1.40%,
-Bahrain Grand Prix,2.04%,2.93%,0.77%,1.02%,
-Belgian Grand Prix,2.80%,2.93%,1.53%,0.77%,
-British Grand Prix,2.93%,2.93%,0.77%,6.10%,
-Canadian Grand Prix,,,0.77%,2.93%,
-Chinese Grand Prix,1.40%,2.04%,,,
-Dutch Grand Prix,1.65%,,,,
-Eifel Grand Prix,0.51%,,,,
-Emilia Romagna Grand Prix,1.40%,,,,
-European Grand Prix,2.29%,1.15%,,,
-French Grand Prix,2.29%,0.77%,3.31%,,
-German Grand Prix,0.89%,,,,
-Hungarian Grand Prix,1.40%,,,,
-Japanese Grand Prix,2.29%,1.15%,,,
-Las Vegas Grand Prix,2.16%,,,,
-Malaysian Grand Prix,1.15%,0.77%,,,
-Mexican Grand Prix,2.04%,1.65%,,,
-Miami Grand Prix,0.25%,,,,
-Monaco Grand Prix,2.04%,1.40%,,,
-Portuguese Grand Prix,1.78%,1.02%,,,
-Qatar Grand Prix,2.80%,1.40%,,,
-Russian Grand Prix,1.78%,1.27%,,,
-Saudi Arabian Grand Prix,2.80%,4.08%,0.77%,,
-Singapore Grand Prix,0.51%,0.77%,,,
-Spanish Grand Prix,1.40%,0.77%,1.27%,1.02%,
-Turkish Grand Prix,2.80%,4.08%,,0.77%,
-United States Grand Prix,0.77%,1.27%,4.20%,2.80%,
-United States Grand Prix,,,,,
+Grand Prix,Accident,Collision,Damage Related,Mechanical or Physical Fault,,Grand Prix,Laps,Corners,Circuit length (km),Race distance (km),Direction,Source
+Abu Dhabi Grand Prix,,0.763%,0.000%,3.053%,,Australian Grand Prix (Albert Park),58,14,5.303,307.574,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Australian Grand Prix,0.763%,1.145%,,4.198%,,Malaysian Grand Prix (Sepang),56,15,5.543,310.408,Clockwise. (Wikipedia),Clockwise. (Wikipedia)
+Austrian Grand Prix,,1.399%,,4.198%,,Bahrain Grand Prix (Sakhir – GP layout),57,15,5.412,308.238,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Azerbaijan Grand Prix,0.763%,0.763%,0.000%,2.672%,,Chinese Grand Prix (Shanghai),56,16,5.451,305.066,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Bahrain Grand Prix,,1.018%,,4.326%,,Spanish Grand Prix (Barcelona-Catalunya),66,14,4.655,307.104,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Belgian Grand Prix,1.018%,0.763%,,2.799%,,Monaco Grand Prix (Circuit de Monaco),78,19,3.337,260.286,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Brazilian Grand Prix,,1.153%,,2.036%,,Canadian Grand Prix (Gilles-Villeneuve),70,14,4.361,305.27,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+British Grand Prix,0.763%,2.290%,,2.926%,,Austrian Grand Prix (Red Bull Ring),71,10,4.318,306.452,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Canadian Grand Prix,,1.399%,,2.926%,,British Grand Prix (Silverstone),52,18,5.891,306.198,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Chinese Grand Prix,,,,1.654%,,German Grand Prix (Hockenheimring),67,17,4.574,306.458,Clockwise. (ESPN.com),Clockwise. (ESPN.com)
+Dutch Grand Prix,,,,,,Hungarian Grand Prix (Hungaroring),70,14,4.381,306.63,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Eifel Grand Prix,,,,,,Belgian Grand Prix (Spa-Francorchamps),44,19,7.004,308.052,Clockwise. (Reuters),Clockwise. (Reuters)
+Emilia Romagna Grand Prix,,,,,,Italian Grand Prix (Monza),53,11,5.793,306.72,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+European Grand Prix,,,,0.509%,,Singapore Grand Prix (Marina Bay),62,19,4.94,306.143,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
+French Grand Prix,,,,,,Japanese Grand Prix (Suzuka),53,18,5.807,307.471,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+German Grand Prix,,,,1.399%,,Russian Grand Prix (Sochi Autodrom),53,18,5.848,309.944,Clockwise. (Wikipedia),Clockwise. (Wikipedia)
+Hungarian Grand Prix,,1.145%,,2.290%,,United States Grand Prix (COTA),56,20,5.513,308.405,Anti-clockwise. (Formula 1® - The Official F1® Website),Anti-clockwise. (Formula 1® - The Official F1® Website)
+Italian Grand Prix,,0.763%,,3.308%,,Brazilian / São Paulo Grand Prix (Interlagos),71,15,4.309,305.879,Anti-clockwise. (Formula 1® - The Official F1® Website),Anti-clockwise. (Formula 1® - The Official F1® Website)
+Japanese Grand Prix,0.891%,,,1.399%,,Abu Dhabi Grand Prix (Yas Marina),55,16,5.554,305.355,Anti-clockwise. (Formula 1® - The Official F1® Website),Anti-clockwise. (Formula 1® - The Official F1® Website)
+Las Vegas Grand Prix,,,,,,Mexican / Mexico City Grand Prix (Hermanos Rodríguez),71,17,4.304,305.354,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Malaysian Grand Prix,,,,2.290%,,European Grand Prix (Valencia Street Circuit*),57,25,5.419,308.883,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
+Mexican Grand Prix,,1.145%,,2.163%,,Azerbaijan Grand Prix (Baku),51,20,6.003,306.049,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
+Miami Grand Prix,,,,,,French Grand Prix (Paul Ricard),53,15,5.842,309.69,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Monaco Grand Prix,1.399%,1.654%,,2.036%,,Styrian Grand Prix (Red Bull Ring),71,10,4.318,306.452,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Portuguese Grand Prix,,0.254%,,,,70th Anniversary GP (Silverstone),52,18,5.891,306.198,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+Qatar Grand Prix,,,,,,Tuscan Grand Prix (Mugello),59,15,5.245,309.497,Clockwise. (Wikipedia),Clockwise. (Wikipedia)
+Russian Grand Prix,,1.399%,,1.781%,,Eifel Grand Prix (Nürburgring GP-Strecke),60,15,5.148,308.617,Clockwise. (Wikipedia),Clockwise. (Wikipedia)
+Saudi Arabian Grand Prix,,,,1.018%,,Portuguese Grand Prix (Portimão),66,15,4.653,306.826,Clockwise. (Wikipedia),Clockwise. (Wikipedia)
+Singapore Grand Prix,1.018%,1.272%,,2.799%,,Emilia Romagna Grand Prix (Imola),63,19,4.909,309.049,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
+Spanish Grand Prix,,1.272%,,1.781%,,Turkish Grand Prix (Istanbul Park),58,14,5.338,309.396,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
+Turkish Grand Prix,,,,,,Sakhir Grand Prix (Bahrain – Outer),87,11,3.543,308.238,Clockwise. (Wikipedia),Clockwise. (Wikipedia)
+Tuscan Grand Prix,,0.763%,,,,Dutch Grand Prix (Zandvoort),72,14,4.259,306.648,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+United States Grand Prix,,1.272%,,2.799%,,Qatar Grand Prix (Lusail),57,16,5.419,308.611,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+,,,,,,Saudi Arabian Grand Prix (Jeddah Corniche),50,27,6.174,308.45,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
+,,,,,,Miami Grand Prix (Miami International Autodrome),57,19,5.41,308.326,Clockwise. (Formula 1® - The Official F1® Website),Clockwise. (Formula 1® - The Official F1® Website)
+,,,,,,Las Vegas Grand Prix (Las Vegas Strip Circuit),50,17,6.201,310.05,Anti-clockwise. (Wikipedia),Anti-clockwise. (Wikipedia)
