@@ -1,0 +1,11 @@
+Model,CV Accuracy,Best Params,Top Feature,Test Accuracy,Runtime (s)
+Logistic Regression,0.8468905472636816,"OrderedDict({'logisticregression__C': 0.28881766539144715, 'logisticregression__penalty': 'l1', 'logisticregression__solver': 'saga'})",num__Pace_Qual,0.856,8.971723318099976
+Decision Tree,0.8402653399668325,"OrderedDict({'max_depth': 4, 'max_features': 'sqrt', 'min_samples_leaf': 20, 'min_samples_split': 20})",num__Pace_Qual,0.824,12.176394701004028
+Gradient Boosting,0.8385572139303483,"OrderedDict({'learning_rate': 0.035224024625934616, 'max_depth': 2, 'n_estimators': 87, 'subsample': 0.5068655485075998})",num__Pace_Qual,0.864,15.968563795089722
+Random Forest,0.8352404643449419,"OrderedDict({'bootstrap': False, 'max_depth': 4, 'max_features': 'sqrt', 'n_estimators': 89})",num__Pace_Qual,0.856,14.005505561828613
+XGBoost,0.8302404643449419,"OrderedDict({'colsample_bytree': 1.0, 'learning_rate': 0.002837982366692323, 'max_depth': 2, 'n_estimators': 1000, 'reg_alpha': 0.8230516453056523, 'reg_lambda': 0.001, 'subsample': 0.6793970507461566})",num__Pace_Qual,0.84,21.437249660491943
+SVM,0.8252238805970148,"OrderedDict({'svc__C': 32.27919000580687, 'svc__kernel': 'linear'})",num__QualifyingPosition,0.808,8.432384729385376
+LightGBM,0.8202819237147595,"OrderedDict({'learning_rate': 0.010372351675034247, 'max_depth': 36, 'n_estimators': 1133, 'num_leaves': 91, 'subsample': 0.8350739741344673})",num__Pace_Qual,0.792,60.02510094642639
+Ordinal Logistic Regression (mord),0.8185903814262022,{},num__Pace_Qual,0.808,0.04032611846923828
+Naive Bayes,0.79030679933665,{},NA,0.8,0.014327287673950195
+kNN,0.7837064676616916,"OrderedDict({'kneighborsclassifier__n_neighbors': 35, 'kneighborsclassifier__p': 2, 'kneighborsclassifier__weights': 'distance'})",NA,0.712,7.181114673614502
