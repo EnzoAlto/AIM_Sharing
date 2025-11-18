@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/venv/**": true,
+        "**/.venv/**": true,
+        "**/env/**": true
+    },
+    "search.exclude": {
+        "**/venv/**": true,
+        "**/.venv/**": true,
+        "**/env/**": true
+    },
+    "files.watcherExclude": {
+        "**/venv/**": true,
+        "**/.venv/**": true,
+        "**/env/**": true,
+        "**/__pycache__/**": true,
+        "**/.ipynb_checkpoints/**": true
+    }
+}
